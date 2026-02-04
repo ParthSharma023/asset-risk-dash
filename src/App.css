@@ -1,0 +1,270 @@
+.app-root {
+  min-height: 100vh;
+  padding: 2.5rem 3rem 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #0f172a;
+}
+
+.app-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: -0.03em;
+  color: #1d4ed8;
+}
+
+.subtitle {
+  margin: 0.25rem 0 0;
+  color: #6b7280;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1.6fr) 320px;
+  gap: 1.5rem;
+}
+
+.controls {
+  background: #f9fafb;
+  padding: 1.5rem 1.5rem 1.75rem;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+.controls h2 {
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.control-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.control-group label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+  gap: 0.35rem;
+}
+
+.control-group input[type='range'] {
+  width: 100%;
+}
+
+.value {
+  font-size: 0.8rem;
+  color: #4b5563;
+}
+
+.notes {
+  margin-top: 1.25rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.charts-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.chart-card {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 1.1rem 1.3rem 1.3rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.chart-card h2 {
+  font-size: 1rem;
+  margin: 0 0 0.75rem;
+  color: #111827;
+}
+
+.chart-container {
+  height: 320px;
+}
+
+.strategy-panel {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 1.1rem 1.3rem 1.3rem;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.strategy-panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  color: #111827;
+}
+
+.strategy-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.strategy-card {
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.7rem;
+  font-size: 0.8rem;
+  border: 1px solid transparent;
+  background: #f9fafb;
+}
+
+.strategy-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.strategy-name {
+  font-weight: 600;
+}
+
+.strategy-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.metric-label {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.metric-value {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.strategy-description {
+  margin: 0;
+  font-size: 0.72rem;
+  color: #6b7280;
+}
+
+.strategy-card--noFix {
+  border-color: #dbeafe;
+  background: #eff6ff;
+}
+
+.strategy-card--fixInPlan {
+  border-color: #dcfce7;
+  background: #ecfdf3;
+}
+
+.strategy-card--fixOnFail {
+  border-color: #ffedd5;
+  background: #fff7ed;
+}
+
+.strategy-card--fixOnRisk {
+  border-color: #fee2e2;
+  background: #fef2f2;
+}
+
+.recommended-card {
+  margin-top: 0.75rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 0.7rem;
+  background: #ecfdf3;
+  border: 1px solid #bbf7d0;
+}
+
+.recommended-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.badge {
+  font-size: 0.7rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: #22c55e;
+  color: #f9fafb;
+  font-weight: 600;
+}
+
+.recommended-header h3 {
+  font-size: 0.9rem;
+  margin: 0;
+  color: #14532d;
+}
+
+.recommended-copy {
+  margin: 0;
+  font-size: 0.73rem;
+  color: #166534;
+}
+
+.control-actions {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.primary-btn,
+.secondary-btn {
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+.primary-btn {
+  background: linear-gradient(to right, #2563eb, #1d4ed8);
+  color: #f9fafb;
+}
+
+.secondary-btn {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    order: 1;
+  }
+
+  .charts-and-summary {
+    order: 2;
+  }
+}
