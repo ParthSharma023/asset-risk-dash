@@ -253,8 +253,16 @@ function App() {
       <header className="app-header">
         <div>
           <h1>Asset Risk Management Dashboard</h1>
-          <p className="subtitle">Calculations Reference Simulator</p>
+          <p className="subtitle">Compare maintenance strategies through risk and cost analysis</p>
         </div>
+        <a
+          href="/asset_calculations.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="pdf-link"
+        >
+          View Calculations PDF
+        </a>
       </header>
 
       <main className="layout">
