@@ -104,6 +104,46 @@
   gap: 1.25rem;
 }
 
+.charts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.charts-header h2 {
+  font-size: 1.15rem;
+  margin: 0;
+  color: #111827;
+  font-weight: 600;
+}
+
+.axes-toggle {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background: #ffffff;
+  color: #374151;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.axes-toggle:hover {
+  background: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.axes-toggle.locked {
+  background: #eff6ff;
+  border-color: #3b82f6;
+  color: #1e40af;
+}
+
 .charts {
   display: grid;
   grid-template-columns: 1fr;
